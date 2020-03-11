@@ -1,0 +1,151 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Colten Coffman}}\\
+	Austin, TX $\cdot$ coltenhcoffman@gmail.com $\cdot$ 2147663241 $\cdot$ github.com/CHCoffman, linkedin.com/in/colten-coffman/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Texas State University}\hfill San Marcos, TX\\
+BS Computer Science \textit{GPA: 3.7} \hfill Aug 2019 - May 2021\\
+\vspace{2mm}
+\textbf{The University of North Texas}\hfill Denton, TX\\
+BS Kinesiology \hfill Aug 2010 - Dec 2016\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Dallas Cowboys Fit} \hfill Frisco, TX\\
+\textit{Elite Personal Trainer} \hfill February 2017 - June 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Develop individualized health and fitness plans for clients
+	\item Create and maintain monthly business plan and reporting systems to track incoming and current client sales
+	\item Set, meet, and exceed monthly sales goals for supplements and training packages
+	\item Computer and data tracking system maintenance
+\end{itemize}
+\textbf{LA Fitness} \hfill McKinney, TX\\
+\textit{Master Trainer} \hfill May 2016 - March 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Provide clients with individualized fitness plans
+	\item Teach and demonstrate wide variety of exercises, explaining benefits and risks
+	\item Provide fitness and health information tailored to each individual
+	\item Help clients gain range of motion and/or mobility after completion of physical therapy on injured areas
+\end{itemize}
+\textbf{Darden Restaurants} \hfill Plano, TX\\
+\textit{Bartender/Server} \hfill June 2015 - September 2016\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Serve orders by picking up and delivering patrons\textquotesingle{} choices from bar and kitchen
+	\item Respond to additional patron requirements by inquiring of needs; observing dining process
+	\item Interact with customers, take orders and serve snacks and drinks
+	\item Restock and replenish bar inventory and supplies
+\end{itemize}
+\textbf{University of North Texas} \hfill Denton, TX\\
+\textit{Weight Room Supervisor/ Certified Personal Trainer} \hfill October 2015 - September 2016\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Carefully observing clients to ensure they are doing exercises properly
+	\item Planning a variety of exercise plans so that clients don\textquotesingle{}t get bored with the same workouts
+	\item Enforcing and reiterating safety rules when clients use equipment improperly
+	\item Modifying workout plans for clients as they progress
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & C/C++, Java                                                                      \\
+	Tools:                 & MS Visual Studio, Sublime, Linux, MS Office, Eclipse, VS Code                    \\
+	Soft Skills:           & Communication, Teamwork, Flexibility, Analysis, Time Management, Self-Motivation \\
+\end{tabular}
+\vspace{2mm}
+
+
+
+\header{Awards}
+\textbf{Employee of the Month} \hfill Cowboys Fit\\
+Awarded EoM for breaking sales records and exceeding expectations in regards to client retention, lead generation and revenue. \hfill July 2017 and September 2018\\
+\vspace*{2mm}
+\textbf{Honor Society Membership} \hfill Phi Theta Kappa Honor Society\\
+Awarded for outstanding achievement in school. \hfill 2018-Present\\
+\vspace*{2mm}
+\textbf{100k club} \hfill Cowboys Fit\\
+Over 100k sales in calendar year. \hfill 2017\\
+\vspace*{2mm}
+
+\ 
+\end{document}
